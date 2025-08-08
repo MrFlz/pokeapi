@@ -1,0 +1,12 @@
+#controllers:
+#    resource:
+#        path: ../src/Controller/
+#        namespace: App\Controller
+#    type: attribute
+
+pokemon_findPokemon:
+    path: /pokemones/{name}
+    controller: App\Pokemon\infrastructure\PokemonController::findPokemon
+    methods: GET
+    #resource: '../src/Pokemon/infrastructure/PokemonController.php'
+    #type: attribute
